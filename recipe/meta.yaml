@@ -16,7 +16,7 @@ source:
 
 build:
   noarch: generic
-  number: 0
+  number: 1
   # Unix only package
 
   rpaths:
@@ -40,11 +40,12 @@ test:
 
 about:
   home: https://CRAN.R-project.org/package=doMC
-  license: GPL-2
-  summary: Provides a parallel backend for the %dopar% function using the multicore functionality
-    of the parallel package.
+  license: GPL-2.0-only
+  summary: Provides a parallel backend for the %dopar% function using the multicore functionality of the parallel package.
   license_family: GPL2
 
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 extra:
   recipe-maintainers:
     - conda-forge/r
