@@ -16,7 +16,7 @@ source:
 
 build:
   noarch: generic
-  number: 1
+  number: 2
   # Unix only package
 
   rpaths:
